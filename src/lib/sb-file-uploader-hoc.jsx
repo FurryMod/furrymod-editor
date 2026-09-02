@@ -111,7 +111,7 @@ const SBFileUploaderHOC = function (WrappedComponent) {
                 
                 // pm: Some bad browsers block any file type (Safari) so we need to only add .accept for those which can handle it properly
                 if (isTypeFilterAvailable()) {
-                    this.inputElement.accept = '.sb,.sb2,.sb3,.pm,.pmp,.fur';
+                    this.inputElement.accept = '.fur,.sb,.sb2,.sb3,.pm,.pmp';
                 }
 
                 this.inputElement.style = 'display: none;';

@@ -28,7 +28,7 @@ const getProjectUri = () => new Promise(resolve => {
 const isUploadAvailable = async () => {
     let res = null;
     try {
-        res = await fetch('https://projects.penguinmod.com/api/v1/projects/canuploadprojects').then(res => res.json());
+        res = await fetch('https://api.furrymod.tutel.page/api/v1/projects/canuploadprojects').then(res => res.json());
     } catch {
         // failed to fetch entirely
         return false;

@@ -237,7 +237,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
         assetHost:
             "https://asset-cdn.penguinmod.com/file/penguinmod-warm-tier-s2-cf",
         projectHost:
-            "https://projects.penguinmod.com/api/v1/projects/getProject?requestType=protobuf&projectID",
+            "https://api.furrymod.tutel.page/api/v1/projects/getProject?requestType=protobuf&projectID",
     };
 
     const mapStateToProps = (state) => ({

@@ -87,7 +87,7 @@ class Storage extends ScratchStorage {
             return `https://assets.scratch.mit.edu/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
         }
 
-        return `https://projects.penguinmod.com/api/v1/projects/backupassetget?asset_name=${this.projectId}_${asset.assetId}.${asset.dataFormat}`;
+        return `https://api.furrymod.tutel.page/api/v1/projects/backupassetget?asset_name=${this.projectId}_${asset.assetId}.${asset.dataFormat}`;
     }
     getScratchAssetGetConfig(asset) {
         return `https://assets.scratch.mit.edu/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;

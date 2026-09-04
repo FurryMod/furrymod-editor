@@ -1451,7 +1451,7 @@ if (IsLocal || IsLiveTests) {
         },
         {
             name: 'Test Extension Loader',
-            href: 'https://studio.penguinmod.com/loadExt.html',
+            href: 'https://studio.furrymod.tutel.page/loadExt.html',
             extensionId: 'special_testExtensionLibrary',
             iconURL: defaultExtensionIcon,
             description: 'Test loading extensions from a library. For developers.',
@@ -1459,7 +1459,7 @@ if (IsLocal || IsLiveTests) {
         },
         {
             name: 'Editor',
-            href: 'https://studio.penguinmod.com/editor.html',
+            href: 'https://studio.furrymod.tutel.page/editor.html',
             extensionId: 'special_editorExtensionLibrary',
             iconURL: penguinmodLibraryExtensionIcon,
             description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',

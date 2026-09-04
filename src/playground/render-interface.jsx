@@ -127,7 +127,7 @@ runAddons();
 //     if (projectDetailCache[String(id)] != null) return projectDetailCache[String(id)];
 
 //     // TODO: when this is fixed change this to the new api
-//     const response = await fetch(`https://projects.penguinmod.com/api/projects/getPublished?id=${id}`);
+//     const response = await fetch(`https://api.furrymod.tutel.page/api/projects/getPublished?id=${id}`);
 //     // Don't continue if the api never returned 200-299 since we would cache an error as project details
 //     if (!response.ok) return {};
 
@@ -165,7 +165,7 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://studio.penguinmod.com/PenguinMod-Packager">
+                    <a href="https://studio.furrymod.tutel.page/PenguinMod-Packager">
                         {/* Do not translate */}
                         {'PenguinMod Packager'}
                     </a>
@@ -281,7 +281,7 @@ class Interface extends React.Component {
     }
     copyProjectLink (id) {
         if ('clipboard' in navigator && 'writeText' in navigator.clipboard) {
-            navigator.clipboard.writeText(`https://projects.penguinmod.com/${id}`);
+            navigator.clipboard.writeText(`https://api.furrymod.tutel.page/${id}`);
         }
     }
     render () {
@@ -350,7 +350,7 @@ class Interface extends React.Component {
                                 className={styles.projectAuthorImage}
                                 title={extraProjectInfo.author}
                                 alt={extraProjectInfo.author}
-                                src={`https://projects.penguinmod.com/api/v1/users/getpfp?username=${extraProjectInfo.author}`}
+                                src={`https://api.furrymod.tutel.page/api/v1/users/getpfp?username=${extraProjectInfo.author}`}
                             />
                         </a>
                         <div className={styles.projectMetadata}>
@@ -396,7 +396,7 @@ class Interface extends React.Component {
                                                 className={styles.remixAuthorImage}
                                                 title={remixedProjectInfo.author}
                                                 alt={remixedProjectInfo.author}
-                                                src={`https://projects.penguinmod.com/api/v1/users/getpfp?username=${remixedProjectInfo.author}`}
+                                                src={`https://api.furrymod.tutel.page/api/v1/users/getpfp?username=${remixedProjectInfo.author}`}
                                             />
                                         </a>
                                         <p>

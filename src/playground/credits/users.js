@@ -21,7 +21,7 @@ const fromHardcodedGithub = username => ({
 });
 const fromHardcodedNamed = username => ({
     image: `https://penguinmod.com/unknown_user.png`,
-    href: "https://studio.penguinmod.com/credits.html#",
+    href: "https://studio.furrymod.tutel.page/credits.html#",
     text: username
 });
 
@@ -83,20 +83,20 @@ DogeisCut (https://github.com/DogeisCut) (discord: dogeiscut)
 const pmSupporterImage = (username) => {
     switch (username) {
         case "mralien7893":
-            return "https://projects.penguinmod.com/api/v1/users/getpfp?username=mralien7893";
+            return "https://api.furrymod.tutel.page/api/v1/users/getpfp?username=mralien7893";
         case "electricfuzzball_pm":
-            return "https://projects.penguinmod.com/api/v1/users/getpfp?username=electricfuzzball_pm";
+            return "https://api.furrymod.tutel.page/api/v1/users/getpfp?username=electricfuzzball_pm";
         case "kylomaskgamer":
-            return "https://projects.penguinmod.com/api/v1/users/getpfp?username=kylomaskgamer";
+            return "https://api.furrymod.tutel.page/api/v1/users/getpfp?username=kylomaskgamer";
         case "MrRedstonia":
-            return "https://projects.penguinmod.com/api/v1/users/getpfp?username=mrredstonia";
+            return "https://api.furrymod.tutel.page/api/v1/users/getpfp?username=mrredstonia";
         default:
             return `https://penguinmod.com/unknown_user.png`;
     }
 };
 const pmSupporterImageFromLine = (line) => {
     const match = line.match(/penguinmod\.com\/profile\?user=([a-zA-Z0-9_-]+)/);
-    return match ? `https://projects.penguinmod.com/api/v1/users/getpfp?username=${match[1]}` : null;
+    return match ? `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=${match[1]}` : null;
 };
 const pmSupporters = pmSupportersText
     .replace(/\r/g, "")
@@ -113,12 +113,12 @@ const pmSupporters = pmSupportersText
 
         // getting url has ( at the start with this regex
         const linkMatch = line.match(/\(([^\)]+)/gm);
-        const potentialLink = !linkMatch ? "https://studio.penguinmod.com/credits.html#" :
+        const potentialLink = !linkMatch ? "https://studio.furrymod.tutel.page/credits.html#" :
             (`${linkMatch[0]}`.slice(1));
         return {
             text: username,
             image,
-            href: potentialLink.startsWith("https://") ? potentialLink : "https://studio.penguinmod.com/credits.html#",
+            href: potentialLink.startsWith("https://") ? potentialLink : "https://studio.furrymod.tutel.page/credits.html#",
         };
     });
 
@@ -315,12 +315,12 @@ const pmTranslators = [
     {
         text: 'kolikiscool',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'n0name',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'onetoanother',
@@ -329,7 +329,7 @@ const pmTranslators = [
     },
     {
         text: 'NamelessCat',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=cat`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=cat`,
         href: "https://penguinmod.com/profile?user=cat",
     },
     {
@@ -340,7 +340,7 @@ const pmTranslators = [
     {
         text: 'goose_but_smart',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'Le_Blob77',
@@ -349,22 +349,22 @@ const pmTranslators = [
     },
     {
         text: 'MrRedstonia',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=mrredstonia`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=mrredstonia`,
         href: "https://penguinmod.com/profile?user=mrredstonia",
     },
     {
         text: 'TheShovel',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=TheShovel`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=TheShovel`,
         href: "https://penguinmod.com/profile?user=TheShovel",
     },
     {
         text: 'SmolBoi37',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'GigantTech',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=GigantTech`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=GigantTech`,
         href: "https://penguinmod.com/profile?user=GigantTech",
     },
     {
@@ -390,7 +390,7 @@ const pmTranslators = [
     {
         text: 'Gabberythethughunte',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'keriyo',
@@ -399,7 +399,7 @@ const pmTranslators = [
     },
     {
         text: 'DenPlayTS',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=denplayts`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=denplayts`,
         href: "https://penguinmod.com/profile?user=denplayts",
     },
     {
@@ -409,7 +409,7 @@ const pmTranslators = [
     },
     {
         text: 'MubiLop',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=MubiLop`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=MubiLop`,
         href: "https://penguinmod.com/profile?user=MubiLop",
     },
     {
@@ -435,11 +435,11 @@ const pmTranslators = [
     {
         text: 'con-zie',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'ImNotScratchY_lolol',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=ImNotScratchY_lolol`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=ImNotScratchY_lolol`,
         href: "https://penguinmod.com/profile?user=ImNotScratchY_lolol",
     },
     {
@@ -449,12 +449,12 @@ const pmTranslators = [
     },
     {
         text: 'inventionpro',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=inventionpro`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=inventionpro`,
         href: "https://penguinmod.com/profile?user=inventionpro",
     },
     {
         text: 'SkyBuilder1717',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=SkyBuilder1717`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=SkyBuilder1717`,
         href: "https://penguinmod.com/profile?user=SkyBuilder1717",
     },
     {
@@ -469,7 +469,7 @@ const pmTranslators = [
     },
     {
         text: 'Oldcoinmania',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=Oldcoinmania`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=Oldcoinmania`,
         href: "https://penguinmod.com/profile?user=Oldcoinmania",
     },
     {
@@ -484,27 +484,27 @@ const pmTranslators = [
     },
     {
         text: 'enduh',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=enduh`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=enduh`,
         href: "https://penguinmod.com/profile?user=enduh",
     },
     {
         text: 'riwataNOUVEAU',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=riwataNOUVEAU`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=riwataNOUVEAU`,
         href: "https://penguinmod.com/profile?user=riwataNOUVEAU",
     },
     {
         text: 'Prode',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=Prode`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=Prode`,
         href: "https://penguinmod.com/profile?user=Prode",
     },
     {
         text: 'dotun',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=dotun`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=dotun`,
         href: "https://penguinmod.com/profile?user=dotun",
     },
     {
         text: 'phi_wpentomino',
-        image: `https://projects.penguinmod.com/api/v1/users/getpfp?username=phi_wpentomino`,
+        image: `https://api.furrymod.tutel.page/api/v1/users/getpfp?username=phi_wpentomino`,
         href: "https://penguinmod.com/profile?user=phi_wpentomino",
     },
 ];
@@ -538,252 +538,252 @@ const pmCostumeSubmittors = [
     {
         text: 'maroonmball',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'eviepepsi',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: '1340073',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'cubeycreator',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'novaspiderultra',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'poundpound0209',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'gdplayer1035',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'cognitixsammy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'thebusyman',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'skyglide5',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'cxnnie09',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'hoveras',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'blockgamer904',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: "Anonygoose's Dog (Max)",
-        image: "https://projects.penguinmod.com/api/v1/users/getpfp?username=anonygoosedog",
+        image: "https://api.furrymod.tutel.page/api/v1/users/getpfp?username=anonygoosedog",
         href: "https://penguinmod.com/profile?user=anonygoosedog",
     },
     {
         text: 'mildannerofc',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'bonemaster96',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'phicicle',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'ron027257',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'fur1na__',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: '00ee8a',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'alf2003_14729',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'pedrotheawsomeguy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'david342013',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'applecode_official',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'harrymations3000',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'yodaugly67_13290',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'splitthread',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'miningminer27',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'gatoc_dev',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'solar_asteri',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'greencube7',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'igorcord',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'abo_notebook',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'broguyf',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'brocant__73748',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'itz_premium',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'kirda132',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'maybe.asdf',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'atomicoperations',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'notapolishcow_52995',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'funster10123',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'jlgri',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'neo_nottro',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'wyfixp',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'blablabluhbluh',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'moony_mon.e',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'thatibrahimguy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'somerandomguuuy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'noteezteez',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: "FloppyDisk_OSC",
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: "dogstudiostuff",
@@ -793,7 +793,7 @@ const pmCostumeSubmittors = [
     {
         text: "oldalx2020",
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: "DogeIsCut",
@@ -840,47 +840,47 @@ const pmSoundSubmittors = [
     {
         text: 'maroonmball',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'jn567',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'lukepuke311',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'ma_01',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'poundpound0209',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'cognitixsammy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'mememaster9000',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'rydia_theawesome',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'jackunavailable',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'hammouda101010',
@@ -890,112 +890,112 @@ const pmSoundSubmittors = [
     {
         text: 'gdplayer1035',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'ztedsgaming',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: '_zackplayz',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: '_mya.factorial',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'funster10123',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'solar_asteri',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'Anonymous-cat1',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'hablethedev',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'ad1340',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'GlitchedSpirit',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: '.pinksus',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'wyfixp',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'atomicoperations',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'orangeluigi414',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'vojtabubela11',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'light227',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'bubgamer072',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'rugman_3',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'halliementos',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'kurrmailence',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'applecode_official',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'furbyguy',
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: 'cynicmusic',
@@ -1020,7 +1020,7 @@ const pmSoundSubmittors = [
     {
         text: "mildannerofc",
         image: `https://penguinmod.com/unknown_user.png`,
-        href: "https://studio.penguinmod.com/credits.html#",
+        href: "https://studio.furrymod.tutel.page/credits.html#",
     },
     {
         text: "nataliexists",

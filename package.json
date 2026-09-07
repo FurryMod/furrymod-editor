@@ -160,5 +160,13 @@
             "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
             "editor-msgs(\\.js)?$": "<rootDir>/test/__mocks__/editor-msgs-mock.js"
         }
+    },
+    "allowScripts": {
+        "core-js@3.49.0": true,
+        "core-js@2.5.7": true,
+        "core-js@1.2.7": true,
+        "core-js@2.3.0": true,
+        "chromedriver@105.0.0": true,
+        "protobufjs@7.5.4": true
     }
 }
